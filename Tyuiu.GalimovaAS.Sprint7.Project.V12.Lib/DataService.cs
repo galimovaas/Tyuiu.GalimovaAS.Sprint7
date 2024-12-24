@@ -10,14 +10,14 @@ namespace Tyuiu.GalimovaAS.Sprint7.Project.V12.Lib
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             int rows = lines.Length;
-            int columns = lines[0].Split(';').Length;
+            int columns = lines[0].Split(',').Length;
 
             string[,] matrix = new string[rows, columns];
             string[] models = new string[rows];
 
             for (int r = 0; r < rows; r++)
             {
-                string[] line_r = lines[r].Split(';');
+                string[] line_r = lines[r].Split(',');
                 for (int c = 0; c < columns; c++)
                 {
                     matrix[r, c] = Convert.ToString(line_r[c]);
@@ -52,14 +52,14 @@ namespace Tyuiu.GalimovaAS.Sprint7.Project.V12.Lib
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             int rows = lines.Length;
-            int columns = lines[0].Split(';').Length;
+            int columns = lines[0].Split(',').Length;
 
             string[,] matrix = new string[rows, columns];
             string[] models = new string[rows];
 
             for (int r = 0; r < rows; r++)
             {
-                string[] line_r = lines[r].Split(';');
+                string[] line_r = lines[r].Split(',');
                 for (int c = 0; c < columns; c++)
                 {
                     matrix[r, c] = Convert.ToString(line_r[c]);

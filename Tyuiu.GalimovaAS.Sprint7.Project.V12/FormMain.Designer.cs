@@ -35,27 +35,25 @@
             radioButtonDate_GAS = new RadioButton();
             radioButtonScreen_GAS = new RadioButton();
             labelSpecifications_GAS = new Label();
-            radioButtonHDD_GAS = new RadioButton();
+            radioButtonSSD_GAS = new RadioButton();
             radioButtonFrequency_GAS = new RadioButton();
-            radioButtonPricessor_GAS = new RadioButton();
+            radioButtonProcessor_GAS = new RadioButton();
             labelModel_GAS = new Label();
             textBoxModel_GAS = new TextBox();
             textBoxBrand_GAS = new TextBox();
             labelBrand_GAS = new Label();
             panelResult_GAS = new Panel();
-            pictureBox1 = new PictureBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            textBoxShopInfo_GAS = new TextBox();
+            textBoxShowModels_GAS = new TextBox();
             labelResult_GAS = new Label();
             textBoxResult_GAS = new TextBox();
-            imageListPhoto_GAS = new ImageList(components);
             buttonShow_GAS = new Button();
             buttonShopInfo_GAS = new Button();
             buttonDone_GAS = new Button();
             buttonInfo_GAS = new Button();
+            toolTip_GAS = new ToolTip(components);
             groupBoxInfo_GAS.SuspendLayout();
             panelResult_GAS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBoxInfo_GAS
@@ -65,9 +63,9 @@
             groupBoxInfo_GAS.Controls.Add(radioButtonDate_GAS);
             groupBoxInfo_GAS.Controls.Add(radioButtonScreen_GAS);
             groupBoxInfo_GAS.Controls.Add(labelSpecifications_GAS);
-            groupBoxInfo_GAS.Controls.Add(radioButtonHDD_GAS);
+            groupBoxInfo_GAS.Controls.Add(radioButtonSSD_GAS);
             groupBoxInfo_GAS.Controls.Add(radioButtonFrequency_GAS);
-            groupBoxInfo_GAS.Controls.Add(radioButtonPricessor_GAS);
+            groupBoxInfo_GAS.Controls.Add(radioButtonProcessor_GAS);
             groupBoxInfo_GAS.Controls.Add(labelModel_GAS);
             groupBoxInfo_GAS.Controls.Add(textBoxModel_GAS);
             groupBoxInfo_GAS.Controls.Add(textBoxBrand_GAS);
@@ -122,16 +120,16 @@
             labelSpecifications_GAS.TabIndex = 8;
             labelSpecifications_GAS.Text = "Характеристики";
             // 
-            // radioButtonHDD_GAS
+            // radioButtonSSD_GAS
             // 
-            radioButtonHDD_GAS.AutoSize = true;
-            radioButtonHDD_GAS.Location = new Point(613, 183);
-            radioButtonHDD_GAS.Name = "radioButtonHDD_GAS";
-            radioButtonHDD_GAS.Size = new Size(115, 24);
-            radioButtonHDD_GAS.TabIndex = 6;
-            radioButtonHDD_GAS.TabStop = true;
-            radioButtonHDD_GAS.Text = "Объём HDD";
-            radioButtonHDD_GAS.UseVisualStyleBackColor = true;
+            radioButtonSSD_GAS.AutoSize = true;
+            radioButtonSSD_GAS.Location = new Point(613, 183);
+            radioButtonSSD_GAS.Name = "radioButtonSSD_GAS";
+            radioButtonSSD_GAS.Size = new Size(112, 24);
+            radioButtonSSD_GAS.TabIndex = 6;
+            radioButtonSSD_GAS.TabStop = true;
+            radioButtonSSD_GAS.Text = "Объём SDD";
+            radioButtonSSD_GAS.UseVisualStyleBackColor = true;
             // 
             // radioButtonFrequency_GAS
             // 
@@ -144,16 +142,16 @@
             radioButtonFrequency_GAS.Text = "Тактовая частота";
             radioButtonFrequency_GAS.UseVisualStyleBackColor = true;
             // 
-            // radioButtonPricessor_GAS
+            // radioButtonProcessor_GAS
             // 
-            radioButtonPricessor_GAS.AutoSize = true;
-            radioButtonPricessor_GAS.Location = new Point(6, 183);
-            radioButtonPricessor_GAS.Name = "radioButtonPricessor_GAS";
-            radioButtonPricessor_GAS.Size = new Size(144, 24);
-            radioButtonPricessor_GAS.TabIndex = 4;
-            radioButtonPricessor_GAS.TabStop = true;
-            radioButtonPricessor_GAS.Text = "Тип процессора";
-            radioButtonPricessor_GAS.UseVisualStyleBackColor = true;
+            radioButtonProcessor_GAS.AutoSize = true;
+            radioButtonProcessor_GAS.Location = new Point(6, 183);
+            radioButtonProcessor_GAS.Name = "radioButtonProcessor_GAS";
+            radioButtonProcessor_GAS.Size = new Size(144, 24);
+            radioButtonProcessor_GAS.TabIndex = 4;
+            radioButtonProcessor_GAS.TabStop = true;
+            radioButtonProcessor_GAS.Text = "Тип процессора";
+            radioButtonProcessor_GAS.UseVisualStyleBackColor = true;
             // 
             // labelModel_GAS
             // 
@@ -194,9 +192,8 @@
             // panelResult_GAS
             // 
             panelResult_GAS.BackColor = SystemColors.Info;
-            panelResult_GAS.Controls.Add(pictureBox1);
-            panelResult_GAS.Controls.Add(textBox2);
-            panelResult_GAS.Controls.Add(textBox1);
+            panelResult_GAS.Controls.Add(textBoxShopInfo_GAS);
+            panelResult_GAS.Controls.Add(textBoxShowModels_GAS);
             panelResult_GAS.Controls.Add(labelResult_GAS);
             panelResult_GAS.Controls.Add(textBoxResult_GAS);
             panelResult_GAS.Location = new Point(12, 290);
@@ -204,29 +201,23 @@
             panelResult_GAS.Size = new Size(1214, 306);
             panelResult_GAS.TabIndex = 1;
             // 
-            // pictureBox1
+            // textBoxShopInfo_GAS
             // 
-            pictureBox1.Location = new Point(6, 78);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(213, 219);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
+            textBoxShopInfo_GAS.Font = new Font("Segoe UI", 13F);
+            textBoxShopInfo_GAS.Location = new Point(649, 20);
+            textBoxShopInfo_GAS.Multiline = true;
+            textBoxShopInfo_GAS.Name = "textBoxShopInfo_GAS";
+            textBoxShopInfo_GAS.Size = new Size(527, 263);
+            textBoxShopInfo_GAS.TabIndex = 3;
             // 
-            // textBox2
+            // textBoxShowModels_GAS
             // 
-            textBox2.Location = new Point(715, 78);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(485, 219);
-            textBox2.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(227, 78);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(482, 219);
-            textBox1.TabIndex = 2;
+            textBoxShowModels_GAS.Font = new Font("Segoe UI", 13F);
+            textBoxShowModels_GAS.Location = new Point(6, 64);
+            textBoxShowModels_GAS.Multiline = true;
+            textBoxShowModels_GAS.Name = "textBoxShowModels_GAS";
+            textBoxShowModels_GAS.Size = new Size(609, 219);
+            textBoxShowModels_GAS.TabIndex = 2;
             // 
             // labelResult_GAS
             // 
@@ -240,28 +231,24 @@
             // 
             // textBoxResult_GAS
             // 
-            textBoxResult_GAS.Location = new Point(9, 30);
+            textBoxResult_GAS.Location = new Point(9, 33);
             textBoxResult_GAS.Multiline = true;
             textBoxResult_GAS.Name = "textBoxResult_GAS";
-            textBoxResult_GAS.Size = new Size(482, 28);
+            textBoxResult_GAS.Size = new Size(606, 25);
             textBoxResult_GAS.TabIndex = 0;
-            // 
-            // imageListPhoto_GAS
-            // 
-            imageListPhoto_GAS.ColorDepth = ColorDepth.Depth32Bit;
-            imageListPhoto_GAS.ImageSize = new Size(30, 30);
-            imageListPhoto_GAS.TransparentColor = Color.Transparent;
             // 
             // buttonShow_GAS
             // 
             buttonShow_GAS.BackColor = Color.White;
             buttonShow_GAS.FlatStyle = FlatStyle.Flat;
             buttonShow_GAS.Image = (Image)resources.GetObject("buttonShow_GAS.Image");
-            buttonShow_GAS.Location = new Point(798, 180);
+            buttonShow_GAS.Location = new Point(792, 180);
             buttonShow_GAS.Name = "buttonShow_GAS";
             buttonShow_GAS.Size = new Size(162, 83);
             buttonShow_GAS.TabIndex = 2;
+            toolTip_GAS.SetToolTip(buttonShow_GAS, "Выводит модели ноутбуков, которые необходимы");
             buttonShow_GAS.UseVisualStyleBackColor = false;
+            buttonShow_GAS.Click += buttonShow_GAS_Click;
             // 
             // buttonShopInfo_GAS
             // 
@@ -272,7 +259,9 @@
             buttonShopInfo_GAS.Name = "buttonShopInfo_GAS";
             buttonShopInfo_GAS.Size = new Size(94, 56);
             buttonShopInfo_GAS.TabIndex = 3;
+            toolTip_GAS.SetToolTip(buttonShopInfo_GAS, "Выводит информацию о производителе");
             buttonShopInfo_GAS.UseVisualStyleBackColor = false;
+            buttonShopInfo_GAS.Click += buttonShopInfo_GAS_Click;
             // 
             // buttonDone_GAS
             // 
@@ -283,7 +272,9 @@
             buttonDone_GAS.Name = "buttonDone_GAS";
             buttonDone_GAS.Size = new Size(94, 56);
             buttonDone_GAS.TabIndex = 4;
+            toolTip_GAS.SetToolTip(buttonDone_GAS, "Выводит информацию о моделе ноутбука");
             buttonDone_GAS.UseVisualStyleBackColor = false;
+            buttonDone_GAS.Click += buttonDone_GAS_Click;
             // 
             // buttonInfo_GAS
             // 
@@ -294,8 +285,13 @@
             buttonInfo_GAS.Name = "buttonInfo_GAS";
             buttonInfo_GAS.Size = new Size(41, 42);
             buttonInfo_GAS.TabIndex = 5;
+            toolTip_GAS.SetToolTip(buttonInfo_GAS, "Информация о разработчике");
             buttonInfo_GAS.UseVisualStyleBackColor = false;
             buttonInfo_GAS.Click += buttonInfo_GAS_Click;
+            // 
+            // toolTip_GAS
+            // 
+            toolTip_GAS.ToolTipTitle = "Подсказка";
             // 
             // FormMain
             // 
@@ -315,7 +311,6 @@
             groupBoxInfo_GAS.PerformLayout();
             panelResult_GAS.ResumeLayout(false);
             panelResult_GAS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -326,23 +321,22 @@
         private Label labelBrand_GAS;
         private TextBox textBoxModel_GAS;
         private TextBox textBoxBrand_GAS;
-        private RadioButton radioButtonPricessor_GAS;
+        private RadioButton radioButtonProcessor_GAS;
         private Label labelSpecifications_GAS;
         private RadioButton radioButtonDate_GAS;
-        private RadioButton radioButtonHDD_GAS;
+        private RadioButton radioButtonSSD_GAS;
         private RadioButton radioButtonFrequency_GAS;
         private RadioButton radioButtonBattery_GAS;
         private RadioButton radioButtonScreen_GAS;
         private Panel panelResult_GAS;
         private TextBox textBoxResult_GAS;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox textBoxShopInfo_GAS;
+        private TextBox textBoxShowModels_GAS;
         private Label labelResult_GAS;
-        private ImageList imageListPhoto_GAS;
-        private PictureBox pictureBox1;
         private Button buttonShow_GAS;
         private Button buttonShopInfo_GAS;
         private Button buttonDone_GAS;
         private Button buttonInfo_GAS;
+        private ToolTip toolTip_GAS;
     }
 }
