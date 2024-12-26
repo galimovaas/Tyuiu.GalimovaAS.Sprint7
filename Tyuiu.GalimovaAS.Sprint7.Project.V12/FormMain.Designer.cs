@@ -306,6 +306,7 @@
             Controls.Add(panelResult_GAS);
             Controls.Add(groupBoxInfo_GAS);
             Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             groupBoxInfo_GAS.ResumeLayout(false);
             groupBoxInfo_GAS.PerformLayout();
